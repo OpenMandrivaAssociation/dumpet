@@ -3,7 +3,7 @@ Version:        1.1
 Release:        1.1
 Summary:        A tool to dump and debug bootable CD images
 License:        GPLv2+
-Group:          Development/Tools
+Group:          System/Base
 URL:            https://fedorahosted.org/dumpet/
 Source0:        https://fedorahosted.org/releases/d/u/dumpet/dumpet-%{version}.tar.bz2
 BuildRequires:	popt-devel
