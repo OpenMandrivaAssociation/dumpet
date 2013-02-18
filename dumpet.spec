@@ -1,6 +1,6 @@
 Name:           dumpet
 Version:        1.1
-Release:        1.1%{?dist}
+Release:        1.1
 Summary:        A tool to dump and debug bootable CD images
 License:        GPLv2+
 Group:          Development/Tools
@@ -34,10 +34,4 @@ rm -rf %{buildroot}
 * Mon Apr 26 2010 Dennis Gregorovic <dgregor@redhat.com> - 1.1-1.1
 - Rebuilt for RHEL 6
 Related: rhbz#566527
-
-* Mon Oct 05 2009 Peter Jones <pjones@redhat.com> - 1.1-1
-- Update to dumpet-1.1, which treats CFLAGS reasonably.
-
-* Mon Oct 05 2009 Peter Jones <pjones@redhat.com> - 1.0-1
-- First release.
 
