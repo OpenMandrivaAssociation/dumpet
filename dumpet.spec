@@ -1,12 +1,12 @@
+Summary:        A tool to dump and debug bootable CD images
 Name:           dumpet
 Version:        1.1
-Release:        1.1
-Summary:        A tool to dump and debug bootable CD images
+Release:        2
 License:        GPLv2+
 Group:          System/Base
-URL:            https://fedorahosted.org/dumpet/
-Source0:        https://fedorahosted.org/releases/d/u/dumpet/dumpet-%{version}.tar.bz2
-BuildRequires:	popt-devel
+Url:            https://fedorahosted.org/dumpet/
+Source0:        https://fedorahosted.org/releases/d/u/dumpet/%{name}-%{version}.tar.bz2
+BuildRequires:	pkgconfig(popt)
 
 %description
 DumpET is a utility to aid in the debugging of bootable CD-ROM images.
@@ -15,23 +15,13 @@ DumpET is a utility to aid in the debugging of bootable CD-ROM images.
 %setup -q
 
 %build
-make %{?_smp_mflags} CFLAGS="%{optflags}"
+%make CFLAGS="%{optflags}"
 
 %install
-rm -rf %{buildroot}
 mkdir -p %{buildroot}/%{_bindir}
-make DESTDIR=%{buildroot} install
-
-%clean
-rm -rf %{buildroot}
+%makeinstall_std 
 
 %files
-%defattr(-,root,root,-)
 %doc README TODO COPYING
 %{_bindir}/dumpet
-
-%changelog
-* Mon Apr 26 2010 Dennis Gregorovic <dgregor@redhat.com> - 1.1-1.1
-- Rebuilt for RHEL 6
-Related: rhbz#566527
 
