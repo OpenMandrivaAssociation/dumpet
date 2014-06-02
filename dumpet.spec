@@ -1,11 +1,11 @@
-Summary:        A tool to dump and debug bootable CD images
-Name:           dumpet
-Version:        1.1
-Release:        6
-License:        GPLv2+
-Group:          System/Base
-Url:            https://fedorahosted.org/dumpet/
-Source0:        https://fedorahosted.org/releases/d/u/dumpet/%{name}-%{version}.tar.bz2
+Summary:	A tool to dump and debug bootable CD images
+Name:		dumpet
+Version:	2.1
+Release:	1
+License:	GPLv2+
+Group:		System/Base
+Url:		https://fedorahosted.org/dumpet/
+Source0:	https://fedorahosted.org/releases/d/u/dumpet/%{name}-%{version}.tar.bz2
 BuildRequires:	pkgconfig(popt)
 
 %description
