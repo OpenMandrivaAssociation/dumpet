@@ -7,6 +7,7 @@ Group:		System/Base
 Url:		https://fedorahosted.org/dumpet/
 Source0:	https://fedorahosted.org/releases/d/u/dumpet/%{name}-%{version}.tar.bz2
 BuildRequires:	pkgconfig(popt)
+BuildRequires:	pkgconfig(libxml-2.0)
 
 %description
 DumpET is a utility to aid in the debugging of bootable CD-ROM images.
