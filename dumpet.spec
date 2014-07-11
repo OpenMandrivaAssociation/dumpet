@@ -1,7 +1,7 @@
 Summary:	A tool to dump and debug bootable CD images
 Name:		dumpet
 Version:	2.1
-Release:	2
+Release:	3
 License:	GPLv2+
 Group:		System/Base
 Url:		https://fedorahosted.org/dumpet/
