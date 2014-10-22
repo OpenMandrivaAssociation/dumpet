@@ -25,4 +25,4 @@ mkdir -p %{buildroot}/%{_bindir}
 %files
 %doc README TODO COPYING
 %{_bindir}/dumpet
-
+%{_mandir}/man1/dumpet.1*
