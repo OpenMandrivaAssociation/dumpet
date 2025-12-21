@@ -6,6 +6,7 @@ License:	GPLv2+
 Group:		System/Base
 Url:		https://fedorahosted.org/dumpet/
 Source0:	https://fedorahosted.org/releases/d/u/dumpet/%{name}-%{version}.tar.bz2
+BuildRequires:	make
 BuildRequires:	pkgconfig(popt)
 BuildRequires:	pkgconfig(libxml-2.0)
 
